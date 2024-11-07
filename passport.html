@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf8">
+    <meta name='viewport' content='width-device-width, initial-scale=1.0'>
+    <title>Паспорт</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        main {
+            border: thin solid #999;
+            width: 1440px;
+            margin-top: 0px;
+            margin-right: auto;
+            margin-bottom: 30px;
+            margin-left: auto;
+            border-radius: 30px;
+        }
+
+        header {
+            background-image: url('header.jpg');
+            border-radius: 30px 30px 0px 0px;
+            background-repeat: no-repeat;
+            height: 200px
+        }
+
+        nav {
+            background-color: #191970;
+            background-repeat: repeat-x;
+            font-family: 'Pattaya', sans-serif;
+            font-size: 110%;
+            line-height: 1.8em;
+        }
+
+        nav ul a {
+            font-style: normal;
+            color: white;
+            background-position: 35px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style-type: none;
+            text-align: center;
+            text-indent: 45px;
+        }
+
+        nav li {
+            margin-top: 0px;
+            margin-right: 28px;
+            margin-left: 80px;
+            margin-bottom: 8px;
+            display: inline;
+            height: auto;
+        }
+
+        nav li a {
+            text-decoration: none;
+            color: #F8F8FF;
+        }
+
+        nav li a:hover {
+            color: #ff8000;
+        }
+
+        body {
+            font-family: 'Pattaya', sans-serif;
+            font-size: 18px;
+        }
+
+
+        footer {
+            background-color: #191970;
+            color: #FFF;
+            font-family: 'Pattaya', sans-serif;
+            font-style: normal;
+            font-size: 120%;
+            padding: 5px;
+            width: 1430px;
+            height: 100px;
+            border-radius: 0px 0px 30px 30px;
+            clear: both;
+        }
+        #main_fon {
+            height: 734px;
+            background-image: url(fon.jpg);
+            background-repeat: no-repeat;
+        }
+
+        #pass_title{
+            padding-top: 41px;
+            padding-left: 74px;
+        }
+
+        
+
+        @font-face {
+            font-family: 'Kreadon';
+            src: local('Kreadon.ttf'),
+            url(/Kreadon.ttf.ttf);
+        }
+
+        .issued1 {
+            font-family: "Kreadon";
+            padding-top: 17px;
+            padding-left: 160px;
+        }
+
+        .issued2 {
+            font-family: "Kreadon";
+            padding-top: 8px;
+            padding-left: 175px;
+            word-spacing: 0.65em;
+        }
+
+       .datav {
+            font-family: "Kreadon";
+            padding-top: 35px;
+            padding-left: 105px;
+            word-spacing: 0.65em;
+            float: left;
+        }
+
+        .kod {
+            font-family: "Kreadon";
+            padding-top: 35px;
+            padding-left: 295px;
+            word-spacing: 0.65em;
+        }
+
+        .podpis{
+            padding-top: 30px;
+            padding-left: 55px;
+            float: left;
+        }
+
+        .podpis1{
+            padding-top: 50px;
+            padding-left: 115px;
+        }
+
+        .passfoto{
+            padding-top: 143px;
+            padding-left: 22px;
+            float: left;
+        }
+
+        .surname{
+            padding-top: 100px;
+            padding-left: 250px;
+        }
+
+        .name{
+            padding-top: 34px;
+            padding-left: 250px;
+        }
+
+        .fname{
+            padding-top: 7px;
+            padding-left: 250px;
+        }
+
+        .pol{
+            padding-top: 6px;
+            padding-left: 40px;
+            float: left;
+        }
+
+        .born{
+            padding-top: 6px;
+            padding-left: 340px;
+        }
+
+        .pborn1{
+            padding-top: 6px;
+            padding-left: 250px;
+            word-spacing: 0.7em;
+        }
+
+        .pborn2{
+            padding-top: 8px;
+            padding-left: 250px;
+        }
+
+        .button-container {
+            margin-top: 90px;
+            margin-left: 600px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #985656;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <header>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="forma.html">Форма для отправки</a></li>
+                <li><a href="#3sigmi" target="_self">
+                    <img height="20px" src="3sigm.jpg">
+                </a></li>
+                <li><a href="pass.html">Паспорт</a></li>
+                <li><a href="">Алгоритмическая игра</a></li>
+            </ul>
+        </nav>
+    <div id="main_fon">
+        <h5 id="pass_title" class="poiret-one-regular">РОССИЙСКАЯ ФЕДЕРАЦИЯ</h5>
+        <div id="page_top">
+            <p class="issued1">ОТДЕЛОМ ВНУТРЕННИХ ДЕЛ</p>
+            <p class="issued2">ГОР. ЙОШКАР-ОЛА</p>
+            <p class="datav">20.08.2024</p>
+            <p class="kod">630-002</p>
+            <img class="podpis" src='podpis1.png'>
+            <img class="podpis1" src='podpis.png'>
+        </div>
+
+        <div id="page_bottom">
+            <img class="passfoto" src='vorona.jpg'>
+            <p class="surname"><span id="new">ТЕРЕШИНА</span></p>
+            <p class="name"><span id="new">АЛЕСЯ</span></p>
+            <p class="fname"><span id="new">ЭДУАРДОВНА</span></p>
+            <p class="pol">ЖЕН.</p>
+            <p class="born">08.06.2004</p>
+            <p class="pborn1">ГОР. ЙОШКАР-ОЛА</p>
+            <p class="pborn2">РЕСП. МАРИЙ-ЭЛ</p>
+        </div>
+        <div class="button-container">
+            <button id="translateButton">Изменить</button>
+        </div>
+    </div>
+    </main>
+    <footer>
+        2024 ВШЭ
+    </footer>
+
+    <script>
+       document.getElementById('translateButton').addEventListener('click', function() 
+    {
+            const issued1Text = document.getElementById('issued1');
+            const issued2Text = document.getElementById('issued2');
+            const datavText = document.getElementById('datav');
+            const kodText = document.getElementById('kod');
+            const surnameText = document.getElementById('surname');
+            const nameText = document.getElementById('name');
+            const fathText = document.getElementById('fname');
+            const polText = document.getElementById('pol');
+            const bornText = document.getElementById('born');
+            const pborn1Text = document.getElementById('pborn1');
+            const pborn2Text = document.getElementById('pborn2');
+
+            if (issued1Text.innerText === 'ОТДЕЛОМ ВНУТРЕННИХ ДЕЛ') {
+                issued1Text.innerText = 'DEPARTMENT OF INTERNAL AFFAIRS';
+                issued2Text.innerText = 'YOSHKAR-OLA';
+                datavText.innerText = '20.08.2024';
+                kodText.innerText = '630-002';
+                surnameText.innerText = 'TERESHINA';
+                nameText.innerText = 'ALESYA';
+                fathText.innerText = 'EDUARDOVNA';
+                polText.innerText = 'FEMALE';
+                bornText.innerText = '08.06.2004';
+                pborn1Text.innerText = 'YOSHKAR-OLA';
+                pborn2Text.innerText = 'MARI EL REPUBLIC';
+
+            } else {
+                issued1Text.innerText = 'ОТДЕЛОМ ВНУТРНЕННИХ ДЕЛ';
+                issued2Text.innerText = 'ГОР. ЙОШКАР-ОЛА';
+                datavText.innerText = '20.08.2024';
+                kodText.innerText = '630-002';
+                surnameText.innerText = 'ТЕРЕШИНА';
+                nameText.innerText = 'АЛЕСЯ';
+                fathText.innerText = 'ЭДУАРДОРВНА';
+                polText.innerText = 'ЖЕН.';
+                bornText.innerText = '08.06.2004';
+                pborn1Text.innerText = 'ГОР. ЙОШКАР-ОЛА';
+                pborn2Text.innerText = 'РЕСП. МАРИЙ ЭЛ';
+            }
+    });
+    </script>
+    
+</body>
+</html>
