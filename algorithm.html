@@ -27,38 +27,47 @@
                </p>
                
                <form id="volumeForm">
-                    <label for="A">A:</label>
-                    <input type="number" id="A" name="A" required="" min="1" step="any"><br>
-                    <label for="H">H:</label>
-                    <input type="number" id="H" name="H" required="" min="1" step="any"><br>
-                    <label for="R">R:</label>
-                    <input type="number" id="R" name="R" required="" min="1" step="any"><br>
-                    <label for="M">M:</label> 
-                    <input type="number" id="M" name="M" required="" min="1" step="any"><br><br>
-                    <input type="submit" value="Рассчитать">
-                </form>
+                <label for="A">Ребро куба (A):</label>
+                <input type="number" id="A" name="A" required><br><br>
+            
+                <label for="H">Высота цилиндра (H):</label>
+                <input type="number" id="H" name="H" required><br><br>
+            
+                <label for="R">Радиус цилиндра (R):</label>
+                <input type="number" id="R" name="R" required><br><br>
+            
+                <label for="M">Объем жидкости (M):</label>
+                <input type="number" id="M" name="M" required><br><br>
+            
+                <button type="button" onclick="checkVolume()">Проверить</button>
+            </form>
+            
+            <p id="result"></p>
 
                 <script>
-                    document.getElementById('volumeForm').addEventListener('submit', function canFit(A, H, R, M) {
- 
-                    const V_cube = Math.pow(A, 3);
-                    
-                    const V_cylinder = Math.PI * Math.pow(R, 2) * H;
-                    
-                    const fitsInCube = M <= V_cube;
-                    const fitsInCylinder = M <= V_cylinder;
-                
-                    if (fitsInCube && fitsInCylinder) {
-                        result = "Объем M поместится в обе емкости.";
-                    } else if (fitsInCube) {
-                        result = "Объем M поместится только в кубическую емкость.";
-                    } else if (fitsInCylinder) {
-                        result = "Объем M поместится только в цилиндрическую емкость.";
+                   function checkVolume() {
+
+                    const A = parseFloat(document.getElementById("A").value);
+                    const H = parseFloat(document.getElementById("H").value);
+                    const R = parseFloat(document.getElementById("R").value);
+                    const M = parseFloat(document.getElementById("M").value);
+
+                    const volumeCube = A ** 3;
+                    const volumeCylinder = Math.PI * R ** 2 * H;
+
+                    let result;
+                    if (volumeCube >= M && volumeCylinder >= M) {
+                        result = "Жидкость поместится в обе емкости.";
+                    } else if (volumeCube >= M) {
+                        result = "Жидкость поместится только в кубическую емкость.";
+                    } else if (volumeCylinder >= M) {
+                        result = "Жидкость поместится только в цилиндрическую емкость.";
                     } else {
-                        result = "Объем M не поместится ни в одну из емкостей.";
+                        result = "Жидкость не поместится ни в одну из емкостей.";
                     }
-                    document.getElementById('result').textContent = result;
-                });
+
+                    document.getElementById("result").textContent = result;
+                }
                 </script>
                <footer>
                    2024 ВШЭ
