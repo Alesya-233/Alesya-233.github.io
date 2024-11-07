@@ -5,7 +5,7 @@
 
 main {
     border: thin solid #999;
-    width: 1440px;
+    width: auto;
     margin-top: 0px;
     margin-right: auto;
     margin-bottom: 30px;
