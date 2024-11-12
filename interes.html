@@ -4,6 +4,53 @@
         <meta charset="utf8">
         <meta name='viewport' content='width-device-width, initial-scale=1.0'>
         <link href="style.css" rel="stylesheet" type="text/css">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-image: url('images/bg.jpg');
+                background-size: cover;
+                background-position: center;
+                color: rgb(0, 0, 0);
+            }
+            header, nav, footer {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            nav a {
+                margin: 0 15px;
+                text-decoration: none;
+                color: #FF7518;
+            }
+            nav a.active {
+                font-weight: bold;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                background-image: url('backgrounds/tabl.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+            th, td {
+                border: 1px solid rgb(0, 0, 0);
+                padding: 10px;
+                text-align: center;
+                background-color: rgba(255, 255, 255, 0);
+                font-size: 1.2em;
+            }
+            table img {
+                width: 200px;
+                height: auto;
+            }
+
+            .album-title {
+                font-size: 1.5em;
+                width: 25%;
+            }
+            .author, .god {
+                width: 15%;
+            }
+        </style>
         <title>Интересно</title>
     </head>
     <body>
@@ -27,39 +74,39 @@
                 <tbody>
                     <tr>
                         <th>Название</th>
-                        <th>Автор</th>
-                        <th>Первая публикация</th>
+                        <th class="author">Автор</th>
+                        <th class="god">Первая публикация</th>
                         <th>Обложка книги</th>
                     </tr>
                     <tr>
                         <td>Как лгать при помощи статистики</td>
                         <td>Дарелл Хафф</td>
                         <td>1954 г.</td>
-                        <td href="https://books.yandex.ru/books/FhAUBcm9"><img src="kaklgat.jpg"></td>
+                        <td href="https://books.yandex.ru/books/FhAUBcm9" target="_blank"><img src="kaklgat.jpg"></td>
                     </tr>
                     <tr>
                         <td>Голая статистика. Самая интересная книга о самой скучной науке</td>
                         <td>Чарльз Уилан</td>
                         <td>2016 г.</td>
-                        <td href="https://books.yandex.ru/books/N2e7oqFS"><img src="golstat.jpg"></td>
+                        <td href="https://books.yandex.ru/books/N2e7oqFS" target="_blank"><img src="golstat.jpg"></td>
                     </tr>
                     <tr>
                         <td>Статистика и котики</td>
                         <td>Владимир Савельев</td>
                         <td>2016 г.</td>
-                        <td href="https://books.yandex.ru/books/iReNl3e7/related"><img src="statikot.jpg"></td>
+                        <td href="https://books.yandex.ru/books/iReNl3e7/related" target="_blank"><img src="statikot.jpg"></td>
                     </tr>
                     <tr>
                         <td>Lean Analytics: Use Data to Build a Better Startup Faster</td>
                         <td>Алистер Кролл и Бенджамин Йосковиц</td>
                         <td>2013 г.</td>
-                        <td href="https://leananalyticsbook.com/"><img src="leananalyt.jpg"></td>
+                        <td href="https://leananalyticsbook.com/" target="_blank"><img src="leananalyt.jpg"></td>
                     </tr>
                     <tr>
                         <td>Читать книгу: «Искусство статистики. Как находить ответы в данных»</td>
                         <td>Дэвид Шпигельхалтер</td>
                         <td>2020 г.</td>
-                        <td href="https://www.litres.ru/book/david-spiegelhalter/iskusstvo-statistiki-kak-nahodit-otvety-v-dannyh-63505872/chitat-onlayn/"><img src="iskusstvostat.jpg"></td>
+                        <td href="https://www.litres.ru/book/david-spiegelhalter/iskusstvo-statistiki-kak-nahodit-otvety-v-dannyh-63505872/chitat-onlayn/" target="_blank"><img src="iskusstvostat.jpg"></td>
                     </tr>
                 </tbody>
               </table>
