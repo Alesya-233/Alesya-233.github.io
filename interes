@@ -1,0 +1,74 @@
+<DOCTYPE! html>
+<html>
+    <head>
+        <meta charset="utf8">
+        <meta name='viewport' content='width-device-width, initial-scale=1.0'>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <title>Интересно</title>
+    </head>
+    <body>
+        <main>
+               <header>
+               </header>
+               <nav>
+                   <ul>
+                       <li><a href="index.html">Главная</a></li>
+                       <li><a href="forma.html">Форма для отправки</a></li>
+                       <li><a href="#3sigmi" target="_self">
+                           <img height="20px" src="3sigm.jpg">
+                       </a></li>
+                       <li><a href="passport.html">Паспорт</a></li>
+                       <li><a href="algorithm.html">Алгоритмическая игра</a></li>
+                       <li><a href="interes.html">Интересно</a></li>
+                   </ul>
+               </nav>
+               <h3>Полезные книги</h3>
+              <table>
+                <tbody>
+                    <tr>
+                        <th>Название</th>
+                        <th>Автор</th>
+                        <th>Первая публикация</th>
+                        <th>Обложка книги</th>
+                    </tr>
+                    <tr>
+                        <td>Как лгать при помощи статистики</td>
+                        <td>Дарелл Хафф</td>
+                        <td>1954 г.</td>
+                        <td href="https://books.yandex.ru/books/FhAUBcm9"><img src="kaklgat.jpg"></td>
+                    </tr>
+                    <tr>
+                        <td>Голая статистика. Самая интересная книга о самой скучной науке</td>
+                        <td>Чарльз Уилан</td>
+                        <td>2016 г.</td>
+                        <td href="https://books.yandex.ru/books/N2e7oqFS"><img src="golstat.jpg"></td>
+                    </tr>
+                    <tr>
+                        <td>Статистика и котики</td>
+                        <td>Владимир Савельев</td>
+                        <td>2016 г.</td>
+                        <td href="https://books.yandex.ru/books/iReNl3e7/related"><img src="statikot.jpg"></td>
+                    </tr>
+                    <tr>
+                        <td>Lean Analytics: Use Data to Build a Better Startup Faster</td>
+                        <td>Алистер Кролл и Бенджамин Йосковиц</td>
+                        <td>2013 г.</td>
+                        <td href="https://leananalyticsbook.com/"><img src="leananalyt.jpg"></td>
+                    </tr>
+                    <tr>
+                        <td>Читать книгу: «Искусство статистики. Как находить ответы в данных»</td>
+                        <td>Дэвид Шпигельхалтер</td>
+                        <td>2020 г.</td>
+                        <td href="https://www.litres.ru/book/david-spiegelhalter/iskusstvo-statistiki-kak-nahodit-otvety-v-dannyh-63505872/chitat-onlayn/"><img src="iskusstvostat.jpg"></td>
+                    </tr>
+                </tbody>
+              </table>
+               
+
+               <footer>
+                   2024 ВШЭ
+               </footer>
+        </main>
+       </body>
+
+</html>
